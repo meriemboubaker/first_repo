@@ -11,7 +11,7 @@ BEGIN
     {j:=j+1;}
     i:=i+1;
     UNTIL (ch[i]='.')
-    write (i)
+    write (i+1)
     write (s)
     IF (j>0) THEN
     write(j+1)
