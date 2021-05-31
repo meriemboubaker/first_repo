@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elle Store</title>
+        <link rel="stylesheet" href="style.css" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        
+    </head>
+    <body>
+        <header class="main-header">
+            <h1 class="band-name band-name-large">ELLE Store</h1>
+            <nav class="main-nav nav">
+                <ul>
+                    <li>HOME</a></li>
+                    <li>STORE</a></li>
+                    <li>ABOUT</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">LES SACS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">SAC 1</span>
+                    <img class="shop-item-image" src="https://m.media-amazon.com/images/I/51mCX9DXGNL._AC_SR160,160_.jpg">
+                    <i class="fa fa-heart"  onclick="like(this)"></i>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">62.99DT</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        
+                    </div>
+                   
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">SAC 2</span>
+                    <img class="shop-item-image" src="https://images-na.ssl-images-amazon.com/images/I/71h%2B3Tq1dmL._AC_UL160_.jpg">
+                    <i class="fa fa-heart"  onclick="like(this)"></i>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">44.99DT</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">SAC 3</span>
+                    <img class="shop-item-image" src="https://images-eu.ssl-images-amazon.com/images/I/61mwF51Ze4L._AC_UL160_.jpg">
+                    <i class="fa fa-heart"  onclick="like(this)"></i>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">39.99DT</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">SAC 4</span>
+                    <img class="shop-item-image" src="https://images-eu.ssl-images-amazon.com/images/I/61DcvFPfGLL._AC_UL160_.jpg">
+                    <i class="fa fa-heart"  onclick="like(this)"></i>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">49.99DT</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">SAC 5</span>
+                    <img class="shop-item-image" src="https://m.media-amazon.com/images/I/41LGCvDY6BL._AC_SR160,160_.jpg">
+                    <i class="fa fa-heart"  onclick="like(this)"></i>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">29.99DT</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">SAC 6</span>
+                    <img class="shop-item-image" src="https://images-na.ssl-images-amazon.com/images/I/811WpZZGtnL._AC_UL160_.jpg">
+                    <i class="fa fa-heart"  onclick="like(this)"></i>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">36.99DT</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            
+        </section>
+        <section class="container content-section" id="cart">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <script src="main.js" ></script>
+        </body>
+    </body>
+</html>
