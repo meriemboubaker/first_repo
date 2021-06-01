@@ -1,0 +1,49 @@
+//METHODE2 POUR LES ELEMENTS COMMUNES
+ALGORITHM sum
+VAR
+    arr: ARRAY_OF INTEGER[4]
+    arr1: ARRAY_OF INTEGER[5]
+    i , j , s ,k : INTEGER :=0
+    l : INTEGER  :=1;
+    testeur:=TRUE
+    test:=TRUE
+    htab : HASH_TABLE<INTEGER,INTEGER>;
+BEGIN
+    arr := {3,1,7,9};
+    arr1 := {2,4,1,9,3};  
+    FOR j FROM 0 TO arr1.length
+    testeur:=FALSE;
+    i:=0
+    WHILE(i in arr.length) DO 
+    IF (arr[i]<>arr1[j]) THEN
+    i:=i+1
+    ELSE testeur:=TRUE;
+    BREAK
+    END_WHILE
+    IF ((testeur = TRUE)and(htab.lookup(k))==FALSE)) THEN
+    htab.insert(k,arr1[j])
+    k=k+1;
+    END_FOR
+    j:=0
+    FOR j FROM 0 TO arr.length
+    testeur:=FALSE;
+    i:=0;
+    WHILE(i in arr1.length) DO 
+    IF (arr[i]<>arr1[j]) THEN
+    i:=i+1
+    ELSE testeur:=TRUE;
+    BREAK
+    END_WHILE
+    IF ((testeur = TRUE)and(htab.lookup(k+l)==FALSE)) THEN
+    htab.insert(k+l,arr[j])
+    l=l+1;
+    testeur:=FALSE;
+    END_FOR
+    FOR y FROM 0 TO l DO
+    s:=s+htab.get(y);
+    END_FOR
+
+    
+    
+
+END
