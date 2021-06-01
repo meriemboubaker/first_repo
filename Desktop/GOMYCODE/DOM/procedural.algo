@@ -1,0 +1,62 @@
+PROCEDURE Dot_product(VAR ps:INTEGER,n : INTEGER , v1,v2 : ARRAY[n])
+VAR
+ i:INTEGER:= 0;    
+BEGIN
+ ps:= 0;
+ FOR i FROM 0 TO n-1 DO
+  ps := ps + v1[i] * v2[i]
+ END_FOR
+END
+ALGORITHM orthogonal
+ VAR 
+  v1 : ARRAY_OF type[25];
+  v2 : ARRAY_OF type[25];
+  ps : INTEGER;
+  n : INTEGER;
+BEGIN
+
+  Write("give length of array"); 
+  Read(n);
+  FOR i FROM 0 to n-1 DO
+    Write("Give array1 element");
+    Read(v1[i]);
+    Write("Give array2 element");
+    Read(v2[i]);
+  END_FOR
+  Dot_product(ps,v1,v2)
+  IF(ps=0)
+   WRITE("is orthogonal")
+  ELSE
+   WRITE("is not orthogonal")
+  END
+FUNCTION Dot_product(n:INTEGER ,v1,v2 : ARRAY[n]) : return_type
+VAR
+ i:INTEGER:= 0;   
+BEGIN
+ ps:= 0;
+FOR i FROM 0 TO v1.length-1 DO
+ ps := ps + v1[i] * v2[i]
+END_FOR
+    RETURN ps ;
+END
+ALGORITHM orthogonal
+VAR 
+  v1 : ARRAY_OF type[25];
+  v2 : ARRAY_OF type[25];
+  ps : INTEGER ;
+  n : INTEGER;
+BEGIN
+   Write("give length of array"); 
+   Read(n);
+   FOR i FROM 0 to n DO
+    Write("Give array1 element");
+    Read(v1[i]);
+    Write("Give array2 element");
+    Read(v2[i]);
+   END_FOR
+   ps := Dot_product(n,v1,v2)
+   IF(ps=0)
+    WRITE("is orthogonal")
+   ELSE
+    WRITE("is not orthogonal")
+END
